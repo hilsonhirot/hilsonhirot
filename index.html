@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+  <meta name="description" content="Selected work.">
+  <script>
+    try {
+      var saved = localStorage.getItem("theme");
+      if (saved === "light" || saved === "dark") {
+        document.documentElement.setAttribute("data-theme", saved);
+      }
+    } catch (error) {}
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="loader" id="loader" aria-hidden="true"><span id="loader-pct">0%</span></div>
+  <header class="site-header" id="header"></header>
+  <main id="main"></main>
+  <div class="dock" id="dock"></div>
+  <noscript>This page needs JavaScript to show the work.</noscript>
+  <script src="js/site.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
