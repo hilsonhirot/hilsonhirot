@@ -66,14 +66,14 @@ const SITE = {
     {
       slug: "northline",
       title: "YY Mobile",
-      summary: "YY Mobile<br>UIUX: online acquisition flow, Redemption flow",
+      summary: "YY Mobile<br>UIUX Designs: online acquisition flow, Redemption flow<br>live link: <a href=\"https://web.three.com.hk/plans/yymobile/index-5g.html\" target=\"_blank\" rel=\"noopener noreferrer\">YY Mobile</a>",
       images: ["images/northline-1.jpg", "images/northline-2.jpg", "images/northline-3.jpg", "images/northline-4.jpg", "images/northline-5.jpg"]
     },
     {
       slug: "atelier",
-      title: "Atelier",
-      summary: "Editorial layout system for a studio site. Swap the frames in the images folder when your work is ready.",
-      images: ["images/atelier-1.svg", "images/atelier-2.svg", "images/atelier-3.svg", "images/atelier-4.svg", "images/atelier-5.svg"]
+      title: "Three",
+      summary: "Three.com.hk<br>Website Revamp: UIUX design <br>live link: <a href=\"https://www.three.com.hk/tc/home.html\" target=\"_blank\" rel=\"noopener noreferrer\">Three.com.hk</a><br><br><br>Website: UI design, Responsive HTML page<br>live link: <a href=\"https://web.three.com.hk/3selectinfo/index.html\" target=\"_blank\" rel=\"noopener noreferrer\">至你賞</a>",
+      images: ["images/three-1.jpg", "images/three-2.jpg", "images/three-3.jpg", "images/three-4.jpg", "images/three-5.jpg"]
     },
     {
       slug: "field-notes",
