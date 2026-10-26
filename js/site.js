@@ -24,20 +24,19 @@ const SITE = {
     "Tasks management: Jira"
   ],
   socials: [
-    { label: "Instagram", href: "https://instagram.com/hilsonhiro" },
-    { label: "LinkedIn", href: "https://www.linkedin.com/in/hilsontsui/" },
-    { label: "Behance", href: "https://www.behance.net/" }
+    { label: "Instagram", href: "https://instagram.com/hilson.hiro" },
+    { label: "Facebook", href: "https://facebook.com/hilsonhiro" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/hilsontsui/" }
   ],
   profile: [
     {
       kicker: "1. Profile",
-      text: "I design websites and visual identities with a focus on type, structure, and restraint. The work should feel considered, and it should stay out of the way of the content.",
-      image: "images/atelier-1.svg"
+      text: "UI/UX, web, and multimedia designer. Interfaces, sites, motion, and campaigns, from the wireframe to the piece that ships.",
+      image: "images/profile-cover.jpg"
     },
     {
       kicker: "2. Approach",
-      text: "Each project starts from what needs to be said. Layout, motion, and imagery come after that, so the result stays clear on a phone and just as quiet on a large screen.",
-      image: "images/paper-1.svg"
+      text: "From wireframe to final interface, including hover states, app updates, animation, and the campaign around the product."
     }
   ],
   info: {
@@ -45,15 +44,15 @@ const SITE = {
     columns: [
       {
         title: "Services",
-        items: ["UIUX Design", "Web Design", "Animation"]
+        items: ["UI/UX Design", "Web Design", "Animation", "Social & Ads", "Logo & Product"]
       },
       {
         title: "Clients",
-        text: "Client One, Client Two, Client Three, Client Four"
+        text: "Three, YY Mobile, IPification, SuperCab, Philips, Hong Kong Disneyland, Kowloon Cricket Club, FCC"
       },
       {
-        title: "Focus",
-        items: ["Culture", "Fashion", "Technology", "Hospitality"]
+        title: "Contact",
+        items: ["+852 6018 8744", "IG hilson.hiro", "FB hilsonhiro"]
       }
     ]
   },
@@ -76,40 +75,40 @@ const SITE = {
       images: ["images/three-1.jpg", "images/three-2.jpg", "images/three-3.jpg", "images/three-4.jpg", "images/three-5.jpg"]
     },
     {
-      slug: "field-notes",
-      title: "Field Notes",
-      summary: "A publishing site built around long reading and a small set of type styles.",
-      images: ["images/field-notes-1.svg", "images/field-notes-2.svg", "images/field-notes-3.svg"]
+      slug: "ipification",
+      title: "IPification",
+      summary: "IPification<br>2022<br>Animation, video, branding, and greetings. From concept and storyboard through edit and output.",
+      images: ["images/ipification-1.jpg"]
     },
     {
-      slug: "harbor",
-      title: "Harbor",
-      summary: "Campaign and web direction for a coastal brand.",
-      images: ["images/harbor-1.svg", "images/harbor-2.svg", "images/harbor-3.svg", "images/harbor-4.svg"]
+      slug: "supercab",
+      title: "SuperCab",
+      summary: "SuperCab<br>March 2019 – November 2021<br>Logo and app icon, UI/UX and maintenance, press and street promotions, taxi and minibus ads, social pages, LIMO launch, and promo video.",
+      images: ["images/supercab-1.jpg", "images/supercab-2.jpg", "images/supercab-3.jpg"]
     },
     {
-      slug: "kin",
-      title: "Kin",
-      summary: "Product photography and a storefront with very little interface.",
-      images: ["images/kin-1.svg", "images/kin-2.svg", "images/kin-3.svg", "images/kin-4.svg", "images/kin-5.svg", "images/kin-6.svg"]
+      slug: "uiux",
+      title: "UI / UX",
+      summary: "UI / UX, web design<br>From wireframe to final interface, including hover states, app updates, and maintenance. FCC, Kowloon Cricket Club, Philips, SuperCab, and binary-option platforms.",
+      images: ["images/uiux-1.jpg", "images/uiux-2.jpg", "images/uiux-3.jpg", "images/uiux-4.jpg", "images/uiux-5.jpg"]
     },
     {
-      slug: "still",
-      title: "Still",
-      summary: "A catalogue layout for objects, materials, and short captions.",
-      images: ["images/still-1.svg", "images/still-2.svg", "images/still-3.svg"]
+      slug: "animation",
+      title: "Animation & Video",
+      summary: "Animation & video<br>Spots and explainers for IPification, SuperCab, Philips, and Hong Kong Disneyland.",
+      images: ["images/animation-1.jpg"]
     },
     {
-      slug: "paper",
-      title: "Paper",
-      summary: "Animation and website for an independent publisher.",
-      images: ["images/paper-1.svg", "images/paper-2.svg", "images/paper-3.svg", "images/paper-4.svg"]
+      slug: "social",
+      title: "Social & Ads",
+      summary: "Social media and ads<br>Campaigns and placements for SuperCab, Philips, and other clients, including outdoor, in-car, and responsive ads.",
+      images: ["images/social-1.jpg", "images/social-2.jpg", "images/social-3.jpg", "images/social-4.jpg"]
     },
     {
-      slug: "vale",
-      title: "Vale",
-      summary: "UIUX Design for a landscape studio, from the wordmark through the project index.",
-      images: ["images/vale-1.svg", "images/vale-2.svg", "images/vale-3.svg", "images/vale-4.svg", "images/vale-5.svg"]
+      slug: "logo",
+      title: "Logo & Product",
+      summary: "Logo and product design<br>Marks for trading brands, plus packaging and product for SuperCab and Old Henry.",
+      images: ["images/logo-1.jpg", "images/logo-2.jpg"]
     }
   ]
 };
