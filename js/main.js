@@ -4,6 +4,8 @@
   const dock = document.querySelector("#dock");
   const loader = document.querySelector("#loader");
   const loaderPct = document.querySelector("#loader-pct");
+  const projectLoader = document.querySelector("#project-loader");
+  const projectLoaderImg = projectLoader.querySelector("img");
 
   const galleryPlan = [
     { c: 10, s: 5, r: 1 },
@@ -98,10 +100,20 @@
 
   function renderProject(slug) {
     const project = projectBySlug(slug);
-    const tiles = project.images.map((src, index) => tile(project, src, index, true)).join("");
+    let index = 0;
+    const tilesFor = (sources) => sources.map((src) => tile(project, src, index++, true)).join("");
+    const cover = tilesFor(project.images);
+    const groups = (project.sections || []).map((section) => {
+      return `<h2 class="case-kicker">${section.title}</h2>${tilesFor(section.images)}`;
+    }).join("");
+    const skills = (project.skills || []).map((skill) => `<li>${skill}</li>`).join("");
+    const tags = skills ? `<ul class="skill-tags" aria-label="Skills">${skills}</ul>` : "";
     return `<section class="stage">
-      <p class="case-note">${project.summary}</p>
-      <div class="cols work-grid">${tiles}</div>
+      <div class="case-intro">
+        <p class="case-note">${project.summary}</p>
+        ${tags}
+      </div>
+      <div class="cols work-grid">${cover}${groups}</div>
     </section>${footer()}`;
   }
 
@@ -166,8 +178,7 @@
     });
   }
 
-  function render() {
-    const state = route();
+  function paint(state) {
     document.title = state.page === "project"
       ? `${projectBySlug(state.slug).title} — ${SITE.name}`
       : `${SITE.name} — ${SITE.role}`;
@@ -180,6 +191,79 @@
     renderDock(state);
     revealImages();
     window.scrollTo(0, 0);
+  }
+
+  let navToken = 0;
+
+  function endDim() {
+    projectLoader.classList.remove("is-on", "has-film");
+  }
+
+  function render() {
+    const state = route();
+    const token = ++navToken;
+    const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const toProject = state.page === "project";
+    const fromProject = !!main.querySelector(".tile.is-case");
+    const animate = !reduce && main.childElementCount > 0 && (toProject || fromProject);
+
+    if (!animate) {
+      endDim();
+      paint(state);
+      return;
+    }
+
+    if (toProject && state.slug === "supercab") {
+      if (!projectLoaderImg.getAttribute("src")) {
+        projectLoaderImg.src = "images/supercab-loader.gif";
+      }
+      projectLoader.classList.add("has-film");
+    } else {
+      projectLoader.classList.remove("has-film");
+    }
+    projectLoader.classList.add("is-on");
+
+    window.setTimeout(() => {
+      if (token !== navToken) return;
+      paint(state);
+      if (!toProject) {
+        window.setTimeout(() => {
+          if (token !== navToken) return;
+          endDim();
+        }, 160);
+        return;
+      }
+
+      const started = performance.now();
+      const images = [...main.querySelectorAll(".tile.is-case img")];
+      let pending = images.length;
+      let released = false;
+      const release = () => {
+        if (released || token !== navToken) return;
+        released = true;
+        const delay = Math.max(0, 420 - (performance.now() - started));
+        window.setTimeout(() => {
+          if (token !== navToken) return;
+          endDim();
+        }, delay);
+      };
+      window.setTimeout(release, 1100);
+      if (!pending) {
+        release();
+        return;
+      }
+      const done = () => {
+        pending -= 1;
+        if (pending <= 0) release();
+      };
+      images.forEach((img) => {
+        if (img.complete && img.naturalWidth > 0) done();
+        else {
+          img.addEventListener("load", done, { once: true });
+          img.addEventListener("error", done, { once: true });
+        }
+      });
+    }, 240);
   }
 
   function bootLoader() {

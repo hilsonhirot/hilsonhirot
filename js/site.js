@@ -63,51 +63,81 @@ const SITE = {
   ],
   projects: [
     {
+      slug: "christmas-crush",
+      title: "Christmas Crush",
+      summary: "Christmas Crush<br>UIUX Designs: KV visualization, Game flow, Game logic and mechanism, Banner adaptation<br>live demo: <a href=\"https://xmas2026-one.vercel.app/\" target=\"_blank\" rel=\"noopener noreferrer\">Christmas Crush</a>",
+      skills: ["Figma", "Cursor", "Adobe Photoshop", "Illustrator", "Vercel"],
+      images: ["images/christmas-crush.png"],
+      sections: [
+        {
+          title: "Gameplay screenshots",
+          images: [
+            "images/christmas-gameplay-1.jpg",
+            "images/christmas-gameplay-2.png",
+            "images/christmas-gameplay-3.png",
+            "images/christmas-gameplay-4.png"
+          ]
+        },
+        {
+          title: "In-app screenshots",
+          images: ["images/christmas-inapp-1.jpg", "images/christmas-inapp-2.jpg"]
+        }
+      ]
+    },
+    {
       slug: "northline",
       title: "YY Mobile",
       summary: "YY Mobile<br>UIUX Designs: online acquisition flow, Redemption flow<br>live link: <a href=\"https://web.three.com.hk/plans/yymobile/index-5g.html\" target=\"_blank\" rel=\"noopener noreferrer\">YY Mobile</a>",
+      skills: ["Figma", "Adobe Photoshop", "Illustrator"],
       images: ["images/northline-1.jpg", "images/northline-2.jpg", "images/northline-3.jpg", "images/northline-4.jpg", "images/northline-5.jpg"]
     },
     {
       slug: "atelier",
       title: "Three",
       summary: "Three.com.hk<br>Website Revamp: UIUX design <br>live link: <a href=\"https://www.three.com.hk/tc/home.html\" target=\"_blank\" rel=\"noopener noreferrer\">Three.com.hk</a><br><br><br>Website: UI design, Responsive HTML page<br>live link: <a href=\"https://web.three.com.hk/3selectinfo/index.html\" target=\"_blank\" rel=\"noopener noreferrer\">至你賞</a>",
+      skills: ["Figma", "Cursor", "Adobe Photoshop", "Illustrator"],
       images: ["images/three-1.jpg", "images/three-2.jpg", "images/three-3.jpg", "images/three-4.jpg", "images/three-5.jpg"]
     },
     {
       slug: "ipification",
       title: "IPification",
       summary: "IPification<br>2022<br>Animation, video, branding, and greetings. From concept and storyboard through edit and output.",
+      skills: ["After Effects", "Premiere", "Adobe Photoshop", "Illustrator"],
       images: ["images/ipification-safe.gif", "images/ipification-earth.gif", "images/ipification-1.jpg"]
     },
     {
       slug: "supercab",
       title: "SuperCab",
       summary: "SuperCab<br>March 2019 – November 2021<br>Logo and app icon, UI/UX and maintenance, press and street promotions, taxi and minibus ads, social pages, LIMO launch, and promo video.",
+      skills: ["Figma", "Adobe Photoshop", "Illustrator", "After Effects"],
       images: ["images/supercab-vclass.gif", "images/supercab-1.jpg", "images/supercab-2.jpg", "images/supercab-3.jpg"]
     },
     {
       slug: "uiux",
       title: "UI / UX",
       summary: "UI / UX, web design<br>From wireframe to final interface, including hover states, app updates, and maintenance. FCC, Kowloon Cricket Club, Philips, SuperCab, and binary-option platforms.",
+      skills: ["Figma", "Adobe Photoshop", "Illustrator"],
       images: ["images/uiux-1.jpg", "images/uiux-2.jpg", "images/uiux-3.jpg", "images/uiux-4.jpg", "images/uiux-5.jpg"]
     },
     {
       slug: "animation",
       title: "Animation & Video",
       summary: "Animation & video<br>Spots and explainers for IPification, SuperCab, Philips, and Hong Kong Disneyland.",
+      skills: ["After Effects", "Premiere", "Adobe Photoshop"],
       images: ["images/animation-bank.gif", "images/animation-1.jpg"]
     },
     {
       slug: "social",
       title: "Social & Ads",
       summary: "Social media and ads<br>Campaigns and placements for SuperCab, Philips, and other clients, including outdoor, in-car, and responsive ads.",
+      skills: ["Adobe Photoshop", "Illustrator"],
       images: ["images/social-1.jpg", "images/social-2.jpg", "images/social-3.jpg", "images/social-4.jpg"]
     },
     {
       slug: "logo",
       title: "Logo & Product",
       summary: "Logo and product design<br>VTech, product films, marks for trading brands, plus packaging for SuperCab and Old Henry.",
+      skills: ["Illustrator", "Adobe Photoshop", "After Effects"],
       images: ["images/logo-vtech.gif", "images/logo-product.gif", "images/logo-1.jpg", "images/logo-2.jpg"]
     }
   ]

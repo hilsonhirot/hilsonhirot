@@ -101,6 +101,34 @@ img {
   pointer-events: none;
 }
 
+.project-loader {
+  position: fixed;
+  inset: 0;
+  z-index: 70;
+  display: grid;
+  place-items: center;
+  background: color-mix(in srgb, var(--bg) 72%, transparent);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.45s ease;
+}
+
+.project-loader.is-on {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.project-loader img {
+  width: min(800px, 92vw);
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.45s ease;
+}
+
+.project-loader.has-film img {
+  opacity: 1;
+}
+
 .site-header {
   position: absolute;
   top: 0;
@@ -201,9 +229,13 @@ img {
   object-fit: contain;
 }
 
+.case-intro {
+  margin: 0 0 22px;
+}
+
 .case-note {
   max-width: 28rem;
-  margin: 0 0 22px;
+  margin: 0;
   padding-left: var(--pad);
   padding-right: var(--pad);
 }
@@ -211,6 +243,29 @@ img {
 .case-note a {
   text-decoration: underline;
   text-underline-offset: 0.15em;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-width: 36rem;
+  margin: 14px 0 0;
+  padding-left: var(--pad);
+  padding-right: var(--pad);
+}
+
+.skill-tags li {
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  padding: 0.14em 0.65em 0.18em;
+  line-height: 1.1;
+}
+
+.case-kicker {
+  grid-column: 1 / -1;
+  margin: 0;
+  font: inherit;
 }
 
 .gallery {
