@@ -84,7 +84,7 @@ const SITE = {
       slug: "supercab",
       title: "SuperCab",
       summary: "SuperCab<br>March 2019 – November 2021<br>Logo and app icon, UI/UX and maintenance, press and street promotions, taxi and minibus ads, social pages, LIMO launch, and promo video.",
-      images: ["images/supercab-vclass.jpg", "images/supercab-1.jpg", "images/supercab-2.jpg", "images/supercab-3.jpg"]
+      images: ["images/supercab-vclass.gif", "images/supercab-1.jpg", "images/supercab-2.jpg", "images/supercab-3.jpg"]
     },
     {
       slug: "uiux",
