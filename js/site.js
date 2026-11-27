@@ -96,7 +96,7 @@ const SITE = {
       slug: "animation",
       title: "Animation & Video",
       summary: "Animation & video<br>Spots and explainers for IPification, SuperCab, Philips, and Hong Kong Disneyland.",
-      images: ["images/animation-bank.jpg", "images/animation-1.jpg"]
+      images: ["images/animation-bank.gif", "images/animation-1.jpg"]
     },
     {
       slug: "social",
