@@ -78,7 +78,7 @@ const SITE = {
       slug: "ipification",
       title: "IPification",
       summary: "IPification<br>2022<br>Animation, video, branding, and greetings. From concept and storyboard through edit and output.",
-      images: ["images/ipification-safe.gif", "images/ipification-earth.jpg", "images/ipification-1.jpg"]
+      images: ["images/ipification-safe.gif", "images/ipification-earth.gif", "images/ipification-1.jpg"]
     },
     {
       slug: "supercab",
