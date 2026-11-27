@@ -208,6 +208,11 @@ img {
   padding-right: var(--pad);
 }
 
+.case-note a {
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
 .gallery {
   grid-auto-rows: 72px;
   padding-top: clamp(280px, 46vh, 540px);

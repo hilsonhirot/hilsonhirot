@@ -48,7 +48,7 @@ const SITE = {
       },
       {
         title: "Clients",
-        text: "Three, YY Mobile, IPification, SuperCab, Philips, Hong Kong Disneyland, Kowloon Cricket Club, FCC"
+        text: "Three, YY Mobile, IPification, VTech, SuperCab, Philips, Hong Kong Disneyland, Kowloon Cricket Club, FCC"
       },
       {
         title: "Contact",
@@ -78,13 +78,13 @@ const SITE = {
       slug: "ipification",
       title: "IPification",
       summary: "IPification<br>2022<br>Animation, video, branding, and greetings. From concept and storyboard through edit and output.",
-      images: ["images/ipification-1.jpg"]
+      images: ["images/ipification-safe.gif", "images/ipification-earth.jpg", "images/ipification-1.jpg"]
     },
     {
       slug: "supercab",
       title: "SuperCab",
       summary: "SuperCab<br>March 2019 – November 2021<br>Logo and app icon, UI/UX and maintenance, press and street promotions, taxi and minibus ads, social pages, LIMO launch, and promo video.",
-      images: ["images/supercab-1.jpg", "images/supercab-2.jpg", "images/supercab-3.jpg"]
+      images: ["images/supercab-vclass.jpg", "images/supercab-1.jpg", "images/supercab-2.jpg", "images/supercab-3.jpg"]
     },
     {
       slug: "uiux",
@@ -96,7 +96,7 @@ const SITE = {
       slug: "animation",
       title: "Animation & Video",
       summary: "Animation & video<br>Spots and explainers for IPification, SuperCab, Philips, and Hong Kong Disneyland.",
-      images: ["images/animation-1.jpg"]
+      images: ["images/animation-bank.jpg", "images/animation-1.jpg"]
     },
     {
       slug: "social",
@@ -107,8 +107,8 @@ const SITE = {
     {
       slug: "logo",
       title: "Logo & Product",
-      summary: "Logo and product design<br>Marks for trading brands, plus packaging and product for SuperCab and Old Henry.",
-      images: ["images/logo-1.jpg", "images/logo-2.jpg"]
+      summary: "Logo and product design<br>VTech, product films, marks for trading brands, plus packaging for SuperCab and Old Henry.",
+      images: ["images/logo-vtech.gif", "images/logo-product.gif", "images/logo-1.jpg", "images/logo-2.jpg"]
     }
   ]
 };
